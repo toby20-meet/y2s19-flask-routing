@@ -1,3 +1,6 @@
 body {
     background: #fcfcfc;
 }
+a:hover{
+	color: black;
+}

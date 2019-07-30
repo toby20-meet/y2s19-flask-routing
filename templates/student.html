@@ -5,6 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
+	{% if student.finished_lab == True %}
+		{% set fin = "" %}
+	{% else %}
+		{% set fin="not" %}
+	{% endif %}
     <h1>This is the page for the student with id {{ id_number }}.</h1>
+    <a href="{{url_for('home')}}">hiiii</a>
+    <p>{{student.name}} from year {{student.year}} has {{fin}} finished his Lab.</p>
 </body>
 </html>
